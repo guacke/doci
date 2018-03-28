@@ -1,5 +1,7 @@
-build
+*build*
 Build
 *.swp
 tags
 *.taghl
+
+.idea

@@ -77,4 +77,13 @@ if (BUILD_DOXYGEN)
 endif(BUILD_DOXYGEN)
 
 add_executable(doci ${SOURCES})
+
+
+# If we're on macOS, we should have the argp library installed in /opt/local (through MacPorts)
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+    target_include_directories(doci PRIVATE /opt/local/include)
+    target_link_libraries(doci /opt/local/lib/libargp.a)
+endif()
+
+
 target_link_libraries(doci ${LAPACK_LIBRARIES} m)
