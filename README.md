@@ -18,6 +18,10 @@ In your terminal, do:
     > cmake ..
     > make
 
+On the UGent HPC, use the cluster_compilation.sh script (no qsub required). Make sure to import the Intel modules before running the doci executable.
+
+    > module load CMake/3.7.1-intel-2016b
+
 To build with intermediate printing of energies of the davidson solver, do:
 
     > cmake -DDAVIDIT=ON ..

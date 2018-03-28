@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7.2)
+cmake_minimum_required(VERSION 3.7.1)
 project(doci)
 set(doci_MMP_VERSION "0.1")
 set(doci_VERSION "${doci_MMP_VERSION} (2017-05-28)")

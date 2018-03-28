@@ -1,0 +1,7 @@
+FCIDUMP          = co_631g_1.FCIDUMP
+SOLVER           = D
+MAX_ITS          = 1000
+TOL              = 1.000000e-08
+DAVIDSON_KEEP    = 2
+DAVIDSON_MAX_VEC = 30
+INITIAL          = 1
